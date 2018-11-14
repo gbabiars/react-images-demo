@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "./01/Image";
+import Image from "./02/Image";
 
 const App = () => {
   const ids = [
