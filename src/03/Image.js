@@ -25,7 +25,7 @@ const Image = ({ src, alt }) => {
     return () => {
       window.removeEventListener("resize", onResize);
     };
-  });
+  }, []);
 
   return (
     <img src={src} alt={alt} style={{ display: "block", width, height }} />
