@@ -28,7 +28,9 @@ const Image = ({ src, alt }) => {
   }, []);
 
   return (
-    <img src={src} alt={alt} style={{ display: "block", width, height }} />
+    <div style={{ width, height }}>
+      <img src={src} alt={alt} style={{ width: "100%" }} />
+    </div>
   );
 };
 

@@ -58,12 +58,15 @@ const Image = ({ src, alt }) => {
   );
 
   return (
-    <img
+    <div
       ref={ref}
-      src={visible ? src : ""}
-      alt={alt}
-      style={{ display: "block", width, height }}
-    />
+      style={{
+        width,
+        height
+      }}
+    >
+      {visible && <img src={src} alt={alt} style={{ width: "100%" }} />}
+    </div>
   );
 };
 

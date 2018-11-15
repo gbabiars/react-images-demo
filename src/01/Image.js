@@ -1,7 +1,9 @@
 import React from "react";
 
 const Image = ({ src, alt }) => (
-  <img src={src} alt={alt} style={{ display: "block" }} />
+  <div>
+    <img src={src} alt={alt} />
+  </div>
 );
 
 export default Image;
