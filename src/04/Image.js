@@ -21,13 +21,19 @@ const Image = ({ src, alt }) => {
     }
   };
 
-  useEffect(() => {
-    onResize();
-    window.addEventListener("resize", onResize);
-    return () => {
-      window.removeEventListener("resize", onResize);
-    };
-  }, []);
+  useEffect(
+    () => {
+      if (!visible) {
+        return;
+      }
+      onResize();
+      window.addEventListener("resize", onResize);
+      return () => {
+        window.removeEventListener("resize", onResize);
+      };
+    },
+    [visible]
+  );
 
   useEffect(
     () => {
