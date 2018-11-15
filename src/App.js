@@ -26,9 +26,8 @@ const App = () => {
   return (
     <div>
       {ids.map(id => (
-        <div>
+        <div key={id}>
           <Image
-            key={id}
             src={`https://www.chevrolet.com/bypass/seg4_tools/ddp/gmna/assets/US/chevrolet/2019/silverado/silverado-1500-new/large_byo/${id}.jpg`}
             alt={id}
           />
