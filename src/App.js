@@ -15,7 +15,6 @@ const App = () => {
     "RW9",
     "63B",
     "VQK",
-    "RW9",
     "SFZ",
     "RIA",
     "SEW",
