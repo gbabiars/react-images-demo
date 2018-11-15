@@ -18,7 +18,9 @@ const App = () => {
     "RW9",
     "SFZ",
     "RIA",
-    "SEW"
+    "SEW",
+    "VQY",
+    "VQZ"
   ];
 
   return (
