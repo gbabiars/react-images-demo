@@ -37,19 +37,13 @@ const Image = ({ src, alt }) => {
     }
   };
 
-  useEffect(
-    () => {
-      if (!visible) {
-        return;
-      }
-      onResize();
-      window.addEventListener("resize", onResize);
-      return () => {
-        window.removeEventListener("resize", onResize);
-      };
-    },
-    [visible]
-  );
+  useEffect(() => {
+    onResize();
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+    };
+  }, []);
 
   useEffect(
     () => {
