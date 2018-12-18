@@ -3,7 +3,31 @@ publish = "build/"
 command = "yarn build"
 
 [[redirects]]
-  from = "/*"
+  from = "/1"
+  to = "/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/2"
+  to = "/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/3"
+  to = "/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/4"
+  to = "/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/5"
   to = "/index.html"
   status = 200
   force = true
