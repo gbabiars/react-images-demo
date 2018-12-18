@@ -7,6 +7,10 @@ import Image5 from "./05/Image";
 
 const Nav = () => (
   <nav>
+    <h3 style={{ paddingLeft: 10, paddingRight: 10 }}>
+      A simple demo showing how we can improve image list UX using React's Hooks
+      and Suspense
+    </h3>
     <ul>
       <li key={1}>
         <a href={`/1`}>Basic</a>
